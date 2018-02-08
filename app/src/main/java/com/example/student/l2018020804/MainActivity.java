@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     public void click1(View v)
     {
         IntentFilter filter = new IntentFilter();
-        filter.addAction("myaction");
+        filter.addAction(Intent.ACTION_SCREEN_ON);
         filter.setPriority(500);
         registerReceiver(receiver,filter);
     }
